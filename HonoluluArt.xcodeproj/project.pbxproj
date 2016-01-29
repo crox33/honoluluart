@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E27BA0641C484AD700B60825 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27BA0631C484AD700B60825 /* JSON.swift */; };
+		E2D730901C4705460043642A /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7308F1C4705460043642A /* VCMapView.swift */; };
 		E2DACE761C45B00F008794D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DACE751C45B00F008794D1 /* AppDelegate.swift */; };
 		E2DACE781C45B00F008794D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DACE771C45B00F008794D1 /* ViewController.swift */; };
 		E2DACE7B1C45B00F008794D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DACE791C45B00F008794D1 /* Main.storyboard */; };
 		E2DACE7D1C45B00F008794D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2DACE7C1C45B00F008794D1 /* Assets.xcassets */; };
 		E2DACE801C45B00F008794D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DACE7E1C45B00F008794D1 /* LaunchScreen.storyboard */; };
 		E2DACE8B1C45B00F008794D1 /* HonoluluArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DACE8A1C45B00F008794D1 /* HonoluluArtTests.swift */; };
+		E2DACE961C45B9AA008794D1 /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = E2DACE951C45B9AA008794D1 /* PublicArt.json */; };
+		E2DACE981C45BB08008794D1 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DACE971C45BB08008794D1 /* Artwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E27BA0631C484AD700B60825 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		E2D7308F1C4705460043642A /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 		E2DACE721C45B00F008794D1 /* HonoluluArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HonoluluArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DACE751C45B00F008794D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2DACE771C45B00F008794D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		E2DACE861C45B00F008794D1 /* HonoluluArtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HonoluluArtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DACE8A1C45B00F008794D1 /* HonoluluArtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonoluluArtTests.swift; sourceTree = "<group>"; };
 		E2DACE8C1C45B00F008794D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2DACE951C45B9AA008794D1 /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
+		E2DACE971C45BB08008794D1 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,12 @@
 		E2DACE741C45B00F008794D1 /* HonoluluArt */ = {
 			isa = PBXGroup;
 			children = (
+				E2DACE951C45B9AA008794D1 /* PublicArt.json */,
 				E2DACE751C45B00F008794D1 /* AppDelegate.swift */,
 				E2DACE771C45B00F008794D1 /* ViewController.swift */,
+				E2D7308F1C4705460043642A /* VCMapView.swift */,
+				E2DACE971C45BB08008794D1 /* Artwork.swift */,
+				E27BA0631C484AD700B60825 /* JSON.swift */,
 				E2DACE791C45B00F008794D1 /* Main.storyboard */,
 				E2DACE7C1C45B00F008794D1 /* Assets.xcassets */,
 				E2DACE7E1C45B00F008794D1 /* LaunchScreen.storyboard */,
@@ -179,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2DACE961C45B9AA008794D1 /* PublicArt.json in Resources */,
 				E2DACE801C45B00F008794D1 /* LaunchScreen.storyboard in Resources */,
 				E2DACE7D1C45B00F008794D1 /* Assets.xcassets in Resources */,
 				E2DACE7B1C45B00F008794D1 /* Main.storyboard in Resources */,
@@ -199,7 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D730901C4705460043642A /* VCMapView.swift in Sources */,
+				E27BA0641C484AD700B60825 /* JSON.swift in Sources */,
 				E2DACE781C45B00F008794D1 /* ViewController.swift in Sources */,
+				E2DACE981C45BB08008794D1 /* Artwork.swift in Sources */,
 				E2DACE761C45B00F008794D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +406,7 @@
 				E2DACE911C45B00F008794D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2DACE921C45B00F008794D1 /* Build configuration list for PBXNativeTarget "HonoluluArtTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +415,7 @@
 				E2DACE941C45B00F008794D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
